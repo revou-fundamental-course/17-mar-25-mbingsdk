@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Kalkulator Persegi</h2>
+            <p>Tools hitung Luas dan Keliling</p>
+        </header>
+
+        <main>
+            <div class="image-container">
+                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/7fcc4f4d-3c25-4e01-8686-93a9091df291.png" alt="Persegi">
+            </div>
+    
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="pilihan">Pilih Perhitungan:</label>
+                    <select id="pilihan">
+                        <option value="luas">Luas (L = S × S)</option>
+                        <option value="keliling">Keliling (K = 4 × S)</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="sisi">Nilai Sisi:</label>
+                    <input type="number" id="sisi" placeholder="Masukkan Nilai Sisi" min="1">
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button class="btn btn-hitung" onclick="hitung()">Hitung</button>
+                <button class="btn btn-reset" onclick="resetForm()">Reset</button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="hasil"></p>
+        </footer>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

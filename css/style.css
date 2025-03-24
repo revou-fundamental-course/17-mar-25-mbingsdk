@@ -1,0 +1,130 @@
+/* Styling Halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: medium;
+}
+
+main {
+    padding: 0 20px;
+}
+
+/* Styling Gambar */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.image-container img {
+    width: 150px;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 48%;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 88%;
+}
+
+/* Tombol */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-hitung {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-hitung:hover {
+    background-color: #218838;
+}
+
+.btn-reset {
+    background-color: orange;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: darkorange;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Hasil */
+#hasil {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
