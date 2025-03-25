@@ -55,5 +55,7 @@ function changeForm() {
 
 function resetForm() {
     document.getElementById("sisi").value = "";
+    document.getElementById("panjang").value = "";
+    document.getElementById("lebar").value = "";
     document.getElementById("hasil").innerText = "";
 }
