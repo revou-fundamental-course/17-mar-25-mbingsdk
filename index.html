@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Persegi</title>
+    <title>Kalkulator Mbing</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h2>Kalkulator Persegi</h2>
+            <h2 id="judul">Kalkulator Persegi</h2>
             <p>Tools hitung Luas dan Keliling</p>
         </header>
 
         <main>
             <div class="image-container">
-                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/7fcc4f4d-3c25-4e01-8686-93a9091df291.png" alt="Persegi">
+                <img src="https://cdn-web-2.ruangguru.com/landing-pages/assets/7fcc4f4d-3c25-4e01-8686-93a9091df291.png" id="gambar" alt="Persegi">
             </div>
     
-            <div class="input-container">
+            <div class="input-container" id="persegi">
                 <div class="input-group">
                     <label for="pilihan">Pilih Perhitungan:</label>
                     <select id="pilihan">
-                        <option value="luas">Luas (L = S × S)</option>
-                        <option value="keliling">Keliling (K = 4 × S)</option>
+                        <option value="luas">Luas</option>
+                        <option value="keliling">Keliling</option>
                     </select>
                 </div>
     
                 <div class="input-group">
                     <label for="sisi">Nilai Sisi:</label>
-                    <input type="number" id="sisi" placeholder="Masukkan Nilai Sisi" min="1">
+                    <input type="number" id="sisi" placeholder="Masukkan Nilai Sisi" min="1" style="display: block;">
+                    <div class="input-group2">
+                        <input type="number" id="panjang" placeholder="Panjang" min="1" style="display: none;">
+                        <input type="number" id="lebar" placeholder="Lebar" min="1" style="display: none;">
+                    </div>
                 </div>
             </div>
             
             <div class="button-container">
                 <button class="btn btn-hitung" onclick="hitung()">Hitung</button>
+                <button class="btn btn-switch" onclick="changeForm()">CH</button>
                 <button class="btn btn-reset" onclick="resetForm()">Reset</button>
             </div>
         </main>
